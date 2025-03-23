@@ -255,7 +255,7 @@ body {
 .themes-section {
   height: 100vh;
   margin-top: 0;
-  background: linear-gradient(to right bottom, rgb(63, 94, 251), rgb(252, 70, 107));
+  background: linear-gradient(to right bottom, rgb(195, 165, 231), rgb(144, 73, 156) , rgb(19, 108, 233));
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
