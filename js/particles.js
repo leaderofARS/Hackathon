@@ -1,42 +1,49 @@
 particlesJS("particles-js", {
-  particles: {
-      number: { value: 100, density: { enable: true, value_area: 800 } }, 
-      color: { value: ["#ffffff", "#a370f0", "#4293f5"] }, 
+    particles: {
+      number: { value: 150, density: { enable: true, value_area: 900 } }, 
+      color: { value: "#00aaff" },
       shape: {
-          type: "circle",
-          stroke: { width: 0, color: "#000000" },
+        type: "circle",
+        stroke: { width: 0, color: "#000000" },
       },
       opacity: {
-          value: 1,
-          random: true,
-          anim: { enable: true, speed: 0.6, opacity_min: 0.5, sync: false },
+        value: 0.9,
+        random: true,
+        anim: { enable: false },
       },
       size: {
-          value: 10, 
-          random: true,
-          anim: { enable: true, speed: 5, size_min: 2, sync: false },
+        value: 5,
+        random: true,
+        anim: { enable: false },
+      },
+      move: {
+        enable: true,
+        speed: 5,
+        direction: "bottom",
+        random: false,
+        straight: true,
+        out_mode: "out",
+        bounce: false,
       },
       line_linked: { enable: false },
-      move: {
-          enable: true,
-          speed: 1.5,
-          direction: "none",
-          random: true,
-          straight: false,
-          out_mode: "out",
-          bounce: false,
-      },
-  },
-  interactivity: {
+    },
+    interactivity: {
       detect_on: "canvas",
       events: {
-          onhover: { enable: true, mode: "repulse" },
-          onclick: { enable: false },
-          resize: true,
+        onhover: { enable: true, mode: "bubble" },
+        onclick: { enable: false },
+        resize: true,
       },
       modes: {
-          repulse: { distance: 200, duration: 0.5 }, 
+        bubble: {
+          distance: 50,
+          size: 100,
+          duration: 0.3,
+          opacity: 0,
+          speed: 3,
+        },
       },
-  },
-  retina_detect: true,
-});
+    },
+    retina_detect: true,
+  });
+  

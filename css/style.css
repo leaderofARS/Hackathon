@@ -11,13 +11,24 @@ body {
   font-family: Roboto, Helvetica, Arial, sans-serif;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  background: linear-gradient(135deg, 
-  #ff007f 0%,
-  #ff4d4d 25%,
-  #8a2be2 50%,
-  #4169e1 75%,
-  #1e90ff 100%
+  background: linear-gradient(135deg,  
+  #000000 0%,    /* Deep Black (Dark City Base) */  
+  #0A0026 7%,    /* Dark Midnight Blue */  
+  #1B005C 14%,   /* Deep Purple-Blue */  
+  #3F009B 21%,   /* Dark Electric Violet */  
+  #6A00F4 28%,   /* Vivid Neon Purple */  
+  #9D00FF 35%,   /* Bright Cyberpunk Purple */  
+  #FF007F 42%,   /* Neon Pink (Vibrant & Bold) */  
+  #FF1493 49%,   /* Deep Neon Pink */  
+  #FF4500 55%,   /* Bright Orange-Red */  
+  #FF9900 61%,   /* Electric Orange */  
+  #00FF99 67%,   /* Neon Green (Hologram Look) */  
+  #00E5FF 73%,   /* Electric Cyan Blue */  
+  #0077FF 78%,   /* Strong Neon Blue */  
+  #1B1464 85%,   /* Deep Blue for Depth */  
+  #000000 100%   /* Back to Black (Darkness) */  
 );
+
 }
 
 .section {
@@ -35,20 +46,13 @@ nav {
   z-index: 1000; /* Ensure it stays above other elements */
 }
 
-#particles-js {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
 .stack {
   position: absolute;
-  z-index: 2;
   font-size: 1.9rem;
  
   left: 10%;
   top: 25%;
-  z-index: 1;
+  z-index: 0;
 }
 
 .stack h1 {
@@ -81,35 +85,6 @@ nav {
   z-index: 0;
 }
 
-#devfolio-apply-now {
-  -ms-flex-align: center;
-  -webkit-box-align: center;
-  align-items: center;
-  background-color: #141894;
-  border-radius: 3px;
-  border: none;
-  color: #ffffff;
-  cursor: pointer;
-  display: -ms-flexbox;
-  display: -webkit-box;
-  display: flex;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
-    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 18px;
-  font-weight: 600;
-  padding: 12px 20px;
-  text-align: center;
-  text-transform: lowercase;
-  transition: background 500ms;
-}
-
-#devfolio-apply-now:not([disabled]) {
-  cursor: pointer;
-}
-
-#devfolio-apply-now:hover {
-  background-color: #2954bf !important;
-}
 
 .icons {
   padding: 25px;
@@ -509,7 +484,6 @@ footer {
   align-items: center;
   height: 30vh;
   font-size: 1.3rem;
-  background-color: #212529;
 }
 
 footer h4 {
