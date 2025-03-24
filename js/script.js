@@ -22,12 +22,6 @@ let countDown = new Date("Feb 27, 2020 09:00:00").getTime(),
         Math.floor((distance % minute) / second) > 0
           ? Math.floor((distance % minute) / second)
           : 0);
-
-    //do something later when date is reached
-    //if (distance < 0) {
-    //  clearInterval(x);
-    //  'IT'S COUNTED DOWN!;
-    //}
   }, second);
 
 const items = document.querySelectorAll(".accordion a");
