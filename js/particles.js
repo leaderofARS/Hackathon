@@ -12,13 +12,13 @@ particlesJS("particles-js", {
         anim: { enable: false },
       },
       size: {
-        value: 5,
+        value: 7,
         random: true,
         anim: { enable: false },
       },
       move: {
         enable: true,
-        speed: 5,
+        speed: 6,
         direction: "bottom",
         random: false,
         straight: true,
@@ -36,9 +36,9 @@ particlesJS("particles-js", {
       },
       modes: {
         bubble: {
-          distance: 50,
-          size: 100,
-          duration: 0.3,
+          distance: 65,
+          size: 135,
+          duration: 0.9,
           opacity: 0,
           speed: 3,
         },
