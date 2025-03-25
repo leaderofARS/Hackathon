@@ -118,8 +118,8 @@
               ><i class="fab fa-instagram"></i
             ></a>
             <a href="https://chat.whatsapp.com/Ipy9fzub1tl8ucZh4Qie0J"
-              ><i class="fab fa-whatsapp"></i
-            ></a>
+            ><i class="fab fa-whatsapp"></i
+          ></a>
           </div>
         </div>
         <div class="illustration animated slideInRight">
@@ -185,7 +185,6 @@
         <h1 class="animated flip delay-2s">Event Schedule_</h1>
       </div>
       <div class="schedule-section-section">
-        
         <div class="section-1">
           <h2 style="text-align: center">DAY 1</h2>
           <table class="table-fill">
@@ -253,8 +252,8 @@
       </div>
     </section>
     <section id="sponsors-section" class="section sponsors-section">
-      <div class="sponsors-section-section">
       <div class="glassy-box-sponsors">
+      <div class="sponsors-section-section">
         <div class="sponsors">
           <h1 class="animated flip delay-2s">Our Sponsors_</h1>
           <div class="sponsors-list">
@@ -290,22 +289,19 @@
               </div>
             </div>
           </div>
-        </div> 
         </div>
-        <!-- <span class="glassy-box-mentors">
         <div class="mentors">
           <h1 class="animated flip delay-2s">Our Mentors_</h1>
         </div>
-        <br/>
         <div class="mentors-list">
           <h4>Will Announce Soon...</h4>
         </div>
-        </span> -->
+      </div>
       </div>
     </section>
 
     <section id="faq-section" class="section faq-section">
-      <span class="glassy-box-faq">
+      <div class="glassy-box-faq">
       <div class="faq-section-section">
         <div class="faqs">
           <h1 class="animated flip delay-2s">FAQs_</h1>
@@ -352,7 +348,7 @@
               </div>
             </div>
             <div class="accordion-item">
-              <a>How much does it cost for registration</a>
+              <a>How much does it cost for registration?</a>
               <div class="content">
                 <p>Registration for this StackFusionFest will be 300 rupees</p>
               </div>
@@ -387,7 +383,7 @@
           </div>
         </div>
       </div>
-      </span>
+      </div>
     </section>
     <footer id="footer" class="footer">
       <div class="footer-contact">
@@ -413,6 +409,33 @@
     <script src="js/script.js"></script>
     <script src="js/particles.js"></script>
     <script src="js/countdown.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        let devfolioOptions = {
+          buttonSelector: "#devfolio-apply-now",
+          key: "hackrcdu",
+        };
+
+        let script = document.createElement("script");
+        script.src = "https://apply.devfolio.co";
+        document.head.append(script);
+
+        script.onload = function () {
+          new Devfolio(devfolioOptions);
+        };
+
+        script.onerror = function () {
+          document
+            .querySelector(devfolioOptions.buttonSelector)
+            .addEventListener("click", function () {
+              window.location.href =
+                "https://devfolio.co/external-apply/" + devfolioOptions.key;
+            });
+        };
+      });
+    </script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
   </body>
 </html>

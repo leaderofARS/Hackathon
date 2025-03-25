@@ -400,7 +400,8 @@ nav {
 }
 .glassy-box-sponsors {
   width: 80%; 
-  max-width: 800px;
+  max-width: 1300px;
+  margin: auto;
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(10px);
   border-radius: 24%;
@@ -491,7 +492,6 @@ nav {
   width: 80%;
   max-width: auto;
   height: auto;
-
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(10px); /* Glass effect */
   border-radius: 24%;
@@ -502,6 +502,7 @@ nav {
   justify-content: center;
   text-align: center;
   padding: auto;
+  margin: 30px;
 }
 
 .faq-section {
